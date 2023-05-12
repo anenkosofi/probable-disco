@@ -114,8 +114,15 @@ a {
 
 .header-container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+}
+
+.logo {
+  margin-right: 172.46px;
+}
+
+.nav {
+  margin-right: auto;
 }
 
 .nav-list {
@@ -159,6 +166,7 @@ a {
 }
 
 .button {
+  min-width: 183px;
   padding: 13px 50px;
   font-family: inherit;
   font-size: 20px;
@@ -195,6 +203,7 @@ a {
 }
 
 .hero-title {
+  width: 440px;
   margin-bottom: 30px;
   font-family: "Georgia Bold", serif;
   font-weight: 700;
@@ -212,6 +221,7 @@ a {
 }
 
 .secondary-button {
+  min-width: 227px;
   padding: 20px 50px;
 }
 
@@ -240,38 +250,19 @@ a {
 
 .steps-description {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 16px;
-  margin-bottom: 48px;
-  text-align: center;
-}
-
-@media screen and (min-width: 1400px) {
-  .steps-description {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: baseline;
-    gap: unset;
-    text-align: left;
-  }
+  justify-content: space-between;
+  align-items: baseline;
 }
 
 .title {
   font-family: "Georgia Bold", serif;
   font-weight: 700;
-  font-size: 36px;
-  line-height: calc(42 / 36);
-}
-
-@media screen and (min-width: 1400px) {
-  .title {
-    font-size: 50px;
-    line-height: calc(79 / 50);
-  }
+  font-size: 50px;
+  line-height: calc(79 / 50);
 }
 
 .steps-description__title {
+  width: 584px;
   color: var(--accent);
 }
 
@@ -288,49 +279,16 @@ a {
   height: 1132px;
 }
 
-@media screen and (max-width: 1399px) {
-  .steps-list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 24px;
-    height: auto;
-  }
-}
-
 .steps-list__item {
   flex-basis: calc((100% - 2 * 95px) / 3);
 }
 
-@media screen and (max-width: 1399px) {
-  .steps-list__item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 36px;
-    width: 75%;
-  }
-}
-
 .steps-list__item:nth-child(2) {
-  align-self: end;
-}
-
-@media screen and (max-width: 1399px) {
-  .steps-list__item:nth-child(2) {
-    flex-direction: row-reverse;
-    align-self: unset;
-  }
+  align-self: flex-end;
 }
 
 .steps-list__item:nth-child(3) {
   padding-top: 65px;
-}
-
-@media screen and (max-width: 1399px) {
-  .steps-list__item:nth-child(3) {
-    padding-top: 0;
-  }
 }
 
 .item__container {
@@ -393,6 +351,7 @@ a {
 }
 
 .story-description__container {
+  width: 580px;
   color: var(--white-text-color);
 }
 
@@ -410,7 +369,7 @@ a {
 
 .story__video {
   position: relative;
-  width: 57%;
+  width: 64%;
 }
 
 .story-overlay {
@@ -443,17 +402,9 @@ a {
 
 .diary-container {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 84px;
-}
-
-@media screen and (min-width: 1400px) {
-  .diary-container {
-    flex-direction: row;
-    gap: 86.86px;
-  }
+  gap: 86.86px;
 }
 
 .diary-card__container {
@@ -533,6 +484,10 @@ a {
   line-height: calc(17 / 10.6195);
 }
 
+.product__container {
+  width: 584px;
+}
+
 .product-pre-title {
   margin-bottom: 10px;
   font-size: 25px;
@@ -560,7 +515,7 @@ a {
 
 .footer-container {
   display: flex;
-  gap: 188px;
+  justify-content: space-between;
   height: 519.88px;
 }
 
@@ -595,7 +550,7 @@ a {
   align-items: flex-end;
   justify-content: space-between;
   align-self: flex-end;
-  width: 77vw;
+  width: 1076px;
 }
 
 .social-list {
@@ -639,26 +594,6 @@ a {
 
 .social-list__item:nth-child(2) .social-list__icon {
   fill: var(--icon-white-color);
-}
-
-@keyframes spin {
-  to {
-    transform: rotate(1turn);
-  }
-}
-
-@keyframes anti-spin {
-  to {
-    transform: rotate(-1turn);
-  }
-}
-
-.social-list__link:hover {
-  animation: spin 3s linear infinite;
-}
-
-.social-list__link:hover .social-list__icon {
-  animation: anti-spin 3s linear infinite;
 }
 
 .discover-title {
